@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+        }
+
+        .container {
+            width: 450px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+        }
+
+        input, textarea {
+            padding: 8px;
+            width: 95%;
+        }
+
+        .gender {
+            width: auto;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2 align="center">User Registration Form</h2>
+
+<form action="display.html" method="GET">
+
+<table>
+
+<tr><td>First Name</td>
+<td><input type="text" name="fname" required></td></tr>
+
+<tr><td>Last Name</td>
+<td><input type="text" name="lname" required></td></tr>
+
+<tr><td>User Name</td>
+<td><input type="text" name="uname" required></td></tr>
+
+<tr><td>Password</td>
+<td><input type="password" name="pass" required></td></tr>
+
+<tr><td>Confirm Password</td>
+<td><input type="password" name="cpass" required></td></tr>
+
+<tr><td>Date of Birth</td>
+<td><input type="date" name="dob" required></td></tr>
+
+<tr><td>Mobile Number</td>
+<td><input type="tel" name="mobile" required></td></tr>
+
+<tr><td>Address</td>
+<td><textarea name="address" required></textarea></td></tr>
+
+<tr><td>Pincode</td>
+<td><input type="text" name="pincode" required></td></tr>
+
+<tr><td>Gender</td>
+<td>
+<input class="gender" type="radio" name="gender" value="Male" required>Male
+<input class="gender" type="radio" name="gender" value="Female">Female
+<input class="gender" type="radio" name="gender" value="Other">Other
+</td></tr>
+
+<tr><td colspan="2">
+<button type="submit">Submit</button>
+</td></tr>
+
+</table>
+
+</form>
+</div>
+
+</body>
+</html>

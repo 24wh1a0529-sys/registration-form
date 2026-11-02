@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Details</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #f2f2f2;
+        }
+
+        .container {
+            width: 500px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid gray;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2 align="center">Submitted Details</h2>
+
+<table>
+<tr><td>First Name</td><td id="fname"></td></tr>
+<tr><td>Last Name</td><td id="lname"></td></tr>
+<tr><td>User Name</td><td id="uname"></td></tr>
+<tr><td>Password</td><td id="pass"></td></tr>
+<tr><td>Confirm Password</td><td id="cpass"></td></tr>
+<tr><td>Date of Birth</td><td id="dob"></td></tr>
+<tr><td>Mobile Number</td><td id="mobile"></td></tr>
+<tr><td>Address</td><td id="address"></td></tr>
+<tr><td>Pincode</td><td id="pincode"></td></tr>
+<tr><td>Gender</td><td id="gender"></td></tr>
+</table>
+
+</div>
+
+<script>
+
+let data = new URLSearchParams(window.location.search);
+
+document.getElementById("fname").innerText = data.get("fname");
+document.getElementById("lname").innerText = data.get("lname");
+document.getElementById("uname").innerText = data.get("uname");
+document.getElementById("pass").innerText = data.get("pass");
+document.getElementById("cpass").innerText = data.get("cpass");
+document.getElementById("dob").innerText = data.get("dob");
+document.getElementById("mobile").innerText = data.get("mobile");
+document.getElementById("address").innerText = data.get("address");
+document.getElementById("pincode").innerText = data.get("pincode");
+document.getElementById("gender").innerText = data.get("gender");
+
+</script>
+
+</body>
+</html>
